@@ -1,0 +1,131 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #343a40;
+    
+}
+
+header {
+    padding: 40px 0;
+    text-align: center;
+    
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: bold;
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+}
+
+
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.about-section {
+    background: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease
+}
+
+.about-section:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.about-section h3 {
+    color: red;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.about-section p {
+    line-height: 1.6;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.about-icon {
+    font-size: 3rem;
+    color: red;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.about-section:hover .about-icon {
+    color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #343a40;
+    color: #fff;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+        padding: 20px 0;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-section {
+        padding: 15px;
+    }
+
+    .about-section h3 {
+        font-size: 1.2rem;
+    }
+
+    .about-section p {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=400, user-scalable=no">
+    <title>MODEL COMPARISION</title>
+    <link rel="stylesheet" href="comparison.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="navbar-container">
+      <img class="logo" src="/assets/images/images/logo.png" alt="" width="120px" height="70px" ></span>
+      <ul class="nav-links">
+        <li><a href="/index.html" target="_self">HOME</a></li>
+        <li><a href="/assets/about us/about.html" target="_blank">ABOUT US</a></li>
+        <li class="dropdown">
+          <a href="#">SERVICES</a>
+            <span class="dropdown-content">
+              <a href="/assets/loan form/index.html" target="_blank">APPLY FOR LOAN</a>
+              <a href="/assets/insurance/ins.html" target="_blank">APPLY FOR INSURANCE</a>
+              <a href="/assets/payment gateway/pay.html" target="_blank">PAYMENT</a></span>
+        <li class="dropdown">
+          <a href="#">MODELS</a>
+          <span class="dropdown-content">
+            <a href="/assets/car cards/honda.html" target="_blank">HONDA</a>
+            <a href="/assets/car cards/hyundai.html" target="_blank">HYUNDAI</a>
+            <a href="/assets/car cards/suzuki.html" target="_blank">SUZUKI</a>
+            <a href="/assets/car cards/toyota.html" target="_blank">TOYOTA</a>
+            <a href="/assets/comparison/comparison.html" target="_self">MODELS COMPARISION</a>
+          </span>
+        </li>
+        <li><a href="/assets/forms/contact.html" target="_blank">CONTACT US</a></li>
+        <li><a href="/assets/forms/signin.html" target="_blank">SIGN IN</a></li>
+        <li><a href="/assets/forms/signup.html" target="_blank">SIGN UP</a></li>
+      
+       </ul>
+      <div class="hamburger" id="hamburger">
+        &#9776;
+      </div>
+     </div>
+    </div>
+  <section class="comparison-container">
+    <div class="car-selection">
+      <h2><span id="element"></span></h2>
+
+      <!-- Brand Selection for Car 1 -->
+      <label for="brand1">Brand 1:</label>
+      <select id="brand1">
+        <option value="honda">Honda</option>
+        <option value="Toyota">Toyota</option>
+        <option value="Suzuki">Suzuki</option>
+        <option value="Hyundai">Hyundai</option>
+      </select>
+
+      <!-- Model Selection for Car 1 -->
+      <label for="model1">Model 1:</label>
+      <select id="model1">
+        
+        <!-- Options will be populated based on the selected brand -->
+      </select>
+
+      <!-- Brand Selection for Car 2 -->
+      <label for="brand2">Brand 2:</label>
+      <select id="brand2">
+        <option value="honda">Honda</option>
+        <option value="Toyota">Toyota</option>
+        <option value="Suzuki">Suzuki</option>
+        <option value="Hyundai">Hyundai</option>
+      </select>
+
+      <!-- Model Selection for Car 2 -->
+      <label for="model2">Model 2:</label>
+      <select id="model2">
+        <!-- Options will be populated based on the selected brand -->
+      </select>
+
+      <button id="compareBtn">Compare</button>
+    </div>
+
+    <div class="car-images">
+      <div id="car1Image"data-aos="flip-left">
+       <img src="Images/honda-city.webp" alt="">
+      </div>
+      <div id="car2Image"data-aos="flip-right">
+        <img src="Images/honda-city.webp" alt="">
+      </div>
+    </div>
+
+    <div class="comparison-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Specifications</th>
+            <th id="car1Name">Honda City Aspire</th>
+            <th id="car2Name">Honda City Aspire</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Price</td>
+            <td id="car1Price">PKR 36.5 lacs</td>
+            <td id="car2Price">PKR 36.5 lacs</td>
+          </tr>
+          <tr>
+            <td>Engine</td>
+            <td id="car1Engine">1.5L I4</td>
+            <td id="car2Engine">1.5L I4</td>
+          </tr>
+          <tr>
+            <td>Horsepower</td>
+            <td id="car1HP">119 HP</td>
+            <td id="car2HP">119 HP</td>
+          </tr>
+          <tr>
+            <td>Fuel Efficiency</td>
+            <td id="car1MPG">16 to 17 km/l</td>
+            <td id="car2MPG">16 to 17 km/l</td>
+          </tr>
+          <tr>
+            <td>Top Speed</td>
+            <td id="car1Speed">180-190 km/h</td>
+            <td id="car2Speed">180-190 km/h</td>
+          </tr>
+          <tr>
+            <td>Seating Capacity</td>
+            <td id="car1Seats">5 Seats</td>
+            <td id="car2Seats">5 Seats</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <!-- Footer -->  
+  <footer class="footer">
+    <div class="footer-container">
+      
+      <!-- Logo -->
+      <div class="footer-logo">
+        <img src="/assets/images/images/logo.png" class="footer-logo" alt="AUTOWORLD Logo">
+          <br><br>
+        <p>&copy; 2024 AutoWorld. All Rights Reserved.</p>
+      </div>
+  
+      <!-- Social Media -->
+      <div class="footer-social">
+        <h3>Follow Us</h3><br>
+        <a href="https://www.facebook.com/login.php/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/login?" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/accounts/login/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/login" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      </div>
+  
+      <!-- Operating Hours -->
+      <div class="footer-hours">
+        <h3>Opening Hours</h3><br>
+        <p>Mon-Fri: 9:00 AM - 6:00 PM</p>
+        <p>Sat: 10:00 AM - 4:00 PM</p>
+        <p>Sun: Closed</p>
+      </div>
+  
+      <!-- Contact Info -->
+      <div class="footer-contact">
+        <h3>Contact Us</h3><br>
+        <p>Email: support@autoworld.com</p>
+        <p>Phone: (021) 332573632</p>
+        <p>Location: PAKISTAN</p>
+        <div class="showroom">
+          <label for="city">Choose a City:</label>
+          <select id="city" onchange="showStoreLinks()">
+              <option value="">Select City</option>
+              <option value="karachi">Karachi</option>
+              <option value="islamabad">Islamabad</option>
+              <option value="lahore">Lahore</option>
+          </select>
+          <div id="store-links" class="store-links">
+              <!-- Links will be dynamically shown here -->
+          </div>
+      </div>
+      </div>
+    </div>
+    
+  </footer>
+ <script src="/assets/java/main.js"></script>
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+ <script>document.addEventListener('DOMContentLoaded', function () {
+  // Car data for different brands and models
+  const carData = {
+      honda: {
+          cityAspire: {
+              name: "Honda City Aspire ",
+              price: "PKR 36.5 lacs",
+              engine: "1.5L I4",
+              horsepower: "119 HP",
+              mpg: "16 to 17 km/l",
+              topSpeed: "180-190 km/h",
+              seats: "5 Seats",
+              image: "Images/honda-city.webp"
+          },
+          civic: {
+              name: "Honda Civic",
+              price: "PKR 86.6 - 99.0 lacs",
+              engine: "2.0L I4",
+              horsepower: "158 HP",
+              mpg: "13 to 14 km/l",
+              topSpeed: "210-220 km/h",
+              seats: "5 Seats",
+              image: "Images/honda-civic.jpg"
+          },
+          BRV: {
+              name: "Honda BRV",
+              price: "PKR 38.0 lacs-PKR 50.0 lacs",
+              engine: "1.5L I4",
+              horsepower: "118 HP",
+              mpg: "14 to 16 km/l",
+              topSpeed: "180 km/h",
+              seats: "7 Seats",
+              image: "Images/Honda_BRV.jpg"
+          },
+          Vezel: {
+              name: "Honda Vezel",
+              price: "PKR 1.32 crore",
+              engine: "2.0L I4",
+              horsepower: "152 HP",
+              mpg: "20 to 22 km/l",
+              topSpeed: "180 km/h",
+              seats: "5 Seats",
+              image: "Images/Honda_Vezel_2013.jpg"
+          },
+          Accord: {
+              name: "Honda Accord",
+              price: "PKR 2.3 crore",
+              engine: "1.5L I4",
+              horsepower: "192 HP",
+              mpg: "12-17 km/l",
+              topSpeed: "210-220 km/h",
+              seats: "5 Seats",
+              image: "Images/Honda_Accord.jpg"
+          },
+        HRV: {
+              name: "Honda HR-V",
+              price: "PKR 76.5 - 79.0 lacs",
+              engine: "1.5L I4",
+              horsepower: "130 HP",
+              mpg: "13-18 km/l",
+              topSpeed: "180 mph",
+              seats: "5 Seats",
+              image: "Images/honda-hr-v-vti.webp"
+          }
+      },
+      Toyota: {
+          CorollaAltis: {
+              name: "Toyota Corolla Altis",
+              price: "PKR 59.7 - 75.5 lacs",
+              engine: "1.8L V8",
+              horsepower: "138 HP",
+              mpg: "11-17 km/l",
+              topSpeed: "170-180 km/h",
+              seats: "5 Seats",
+              image: "Images/car-2.jpg"
+          },
+          Aqua: {
+              name: "Toyota Aqua",
+              price: "PKR 72.8 lacs",
+              engine: "1.5L V8",
+              horsepower: "99 HP",
+              mpg: "22-25 km/l",
+              topSpeed: "170-180 km/h",
+              seats: "5 Seats",
+              image: "Images/toyota-aqua.webp"
+          },
+          PriusS: {
+              name: "Toyota Prius S",
+              price: "PKR 1.2 - 1.65 crore",
+              engine: "1.L V8",
+              horsepower: "121 HP",
+              mpg: "22-25 km/l",
+              topSpeed: "180-190 km/h",
+              seats: "5 Seats",
+              image: "Images/toyota-prius.webp"
+          },
+          Revo: {
+              name: "Toyota Hilux Revo",
+              price: "PKR 1.1 - 1.54 crore",
+              engine: "2.4L",
+              horsepower: "148 HP",
+              mpg: "10-14 km/l",
+              topSpeed: "180-190 km/h",
+              seats: "5 Seats",
+              image: "Images/Toyota_Hilux_Revo.png"
+          },
+          Fortuner: {
+              name: "Toyota Fortuner",
+              price: "PKR 1.45 - 1.99 crore",
+              engine: "2.4L",
+              horsepower: "148 HP",
+              mpg: "10-14 km/l",
+              topSpeed: "180-200 km/h",
+              seats: "7 Seats",
+              image: "Images/Fortuner_-_PNG.png"
+          }
+      },
+      Suzuki: {
+        SwiftRS: {
+              name: "Suzuki Swift RS",
+              price: "PKR 43.4 - 47.2 lacs",
+              engine: "1.2L ",
+              horsepower: "90 HP",
+              mpg: "15-17 km/l",
+              topSpeed: "180 km/h",
+              seats: "5 Seats",
+              image: "Images/suzuki-swift-rs.webp"
+          },
+          cultus: {
+              name: "Suzuki Cultus",
+              price: "PKR 38.6 - 45.5 lacs",
+              engine: "1.2L Turbo ",
+              horsepower: "81 HP",
+              mpg: "14-19 km/l",
+              topSpeed: "160-170 km/h",
+              seats: "5 Seats",
+              image: "Images/suzuki-cultus.webp"
+          },
+          jimny: {
+              name: "Suzuki jimny Sierra",
+              price: "PKR 60.5 lacs",
+              engine: "1.5L Turbo Inline-6",
+              horsepower: "101 HP",
+              mpg: "12-14 km/l",
+              topSpeed: "140-150 km/h",
+              seats: "4 Seats",
+              image: "Images/suzuki-jimny.webp"
+          },
+          wagonR: {
+              name: "Suzuki wagon-R",
+              price: "PKR 60.5 lacs",
+              engine: "1.2L Turbo Inline-6",
+              horsepower: "81 HP",
+              mpg: "14-18 km/l",
+              topSpeed: "160-170 km/h",
+              seats: "5 Seats",
+              image: "Images/suzuki-wagon-r.webp"
+          },
+          EVERY: {
+              name: "Suzuki Every",
+              price: "PKR 27.5 - 28.0 lacs",
+              engine: "0.66L Turbo Inline-6",
+              horsepower: "47 HP",
+              mpg: "14-16 km/l",
+              topSpeed: "120-130 km/h",
+              seats: "4-7 Seats",
+              image: "Images/EVERY.jpg"
+          },
+           Ciaz: {
+              name: "Suzuki Ciaz",
+              price: "PKR 28.5 - 29.0 lacs",
+              engine: "1.4L",
+              horsepower: "92 HP",
+              mpg: "14-20 km/l",
+              topSpeed: "180-190 km/h",
+              seats: "5 Seats",
+              image: "Images/suzuki-ciaz.webp"
+          }
+      },
+      Hyundai: {
+        Elantra: {
+              name: "Hyundai Elantra",
+              price: "PKR 98 lacs",
+              engine: "2.0L Turbo Inline-6",
+              horsepower: "147 HP",
+              mpg: "12-14 km/l",
+              topSpeed: "190-200 km/h",
+              seats: "5 Seats",
+              image: "Images/hyundai-elantra.jpg"
+        },
+        sonata: {
+              name: "Hyundai Sonata",
+              price: "PKR 99.8 lacs - 1.12 crore",
+              engine: "2.5L Turbo Inline-6",
+              horsepower: "191 HP",
+              mpg: "10-12 km/l",
+              topSpeed: "200-210 km/h",
+              seats: "5 Seats",
+              image: "Images/hyundai-sonata.webp"
+        },
+        Santa: {
+              name: "Hyundai Santa-Fe",
+              price: "PKR 1.25 - 1.39 crore",
+              engine: "3.0L Turbo Inline-6",
+              horsepower: "473 HP",
+              mpg: "18 MPG",
+              topSpeed: "155 mph",
+              seats: "5 Seats",
+              image: "Images/Santa--fe-cover.jpg"
+        },
+        tucson: {
+              name: "Hyundai Tucson",
+              price: "PKR 71.2 - 87.1 lacs",
+              engine: "2.0L",
+              horsepower: "155 HP",
+              mpg: "12-16 km/l",
+              topSpeed: "190-200 km/h",
+              seats: "5 Seats",
+              image: "Images/hyundai-tucson.webp"
+        },
+        santro: {
+              name: "Hyundai Santro",
+              price: "PKR 8.2 - 9.8 lacs",
+              engine: "1.1L",
+              horsepower: "68 hp",
+              mpg: "16-18 km/l",
+              topSpeed: "140-150 km/h",
+              seats: "5 Seats",
+              image: "Images/hyundai-santro.webp"
+        },
+        Ioniq: {
+              name: "Hyundai Ioniq",
+              price: "PKR 2.25 crore",
+              engine: "1.6L",
+              horsepower: "139 HP",
+              mpg: "16-18 km/l",
+              topSpeed: "140-150 km/h",
+              seats: "5 Seats",
+              image: "Images/Ioniq_6.jpeg"
+        }
+      }
+  };
+    // Function to update model options based on the selected brand
+    function updateModels(brand, modelSelect) {
+        const models = carData[brand];
+        modelSelect.innerHTML = "";  // Clear previous options
+        for (const model in models) {
+            const option = document.createElement("option");
+            option.value = model;
+            option.textContent = models[model].name;
+            modelSelect.appendChild(option);
+        }
+    }
+
+    // Update models when a brand is selected
+    const brand1Select = document.getElementById('brand1');
+    const model1Select = document.getElementById('model1');
+    const brand2Select = document.getElementById('brand2');
+    const model2Select = document.getElementById('model2');
+
+    brand1Select.addEventListener('change', function () {
+        updateModels(brand1Select.value, model1Select);
+    });
+
+    brand2Select.addEventListener('change', function () {
+        updateModels(brand2Select.value, model2Select);
+    });
+
+    // Update car comparison table based on selected models
+    function updateComparison() {
+        const car1 = model1Select.value;
+        const car2 = model2Select.value;
+
+        // Update car names
+        document.getElementById('car1Name').textContent = carData[brand1Select.value][car1].name;
+        document.getElementById('car2Name').textContent = carData[brand2Select.value][car2].name;
+
+        // Update car details in the table
+        document.getElementById('car1Price').textContent = carData[brand1Select.value][car1].price;
+        document.getElementById('car2Price').textContent = carData[brand2Select.value][car2].price;
+
+        document.getElementById('car1Engine').textContent = carData[brand1Select.value][car1].engine;
+        document.getElementById('car2Engine').textContent = carData[brand2Select.value][car2].engine;
+
+        document.getElementById('car1HP').textContent = carData[brand1Select.value][car1].horsepower;
+        document.getElementById('car2HP').textContent = carData[brand2Select.value][car2].horsepower;
+
+        document.getElementById('car1MPG').textContent = carData[brand1Select.value][car1].mpg;
+        document.getElementById('car2MPG').textContent = carData[brand2Select.value][car2].mpg;
+
+        document.getElementById('car1Speed').textContent = carData[brand1Select.value][car1].topSpeed;
+        document.getElementById('car2Speed').textContent = carData[brand2Select.value][car2].topSpeed;
+
+        document.getElementById('car1Seats').textContent = carData[brand1Select.value][car1].seats;
+        document.getElementById('car2Seats').textContent = carData[brand2Select.value][car2].seats;
+
+        // Update car images
+        document.getElementById('car1Image').innerHTML = `<img src="${carData[brand1Select.value][car1].image}" alt="${carData[brand1Select.value][car1].name}">`;
+        document.getElementById('car2Image').innerHTML = `<img src="${carData[brand2Select.value][car2].image}" alt="${carData[brand2Select.value][car2].name}">`;
+    }
+
+    // Event listener for the Compare button
+    document.getElementById('compareBtn').addEventListener('click', updateComparison);
+
+    // Initialize the model options
+    updateModels(brand1Select.value, model1Select);
+    updateModels(brand2Select.value, model2Select);
+});
+
+var typed = new Typed('#element', {
+    strings: ['Select Cars to Compare'],
+    typeSpeed: 50,
+    loop: true,
+    loopcount: Infinity,
+});
+
+AOS.init();
+
+</script>
+</body>
+</html>
